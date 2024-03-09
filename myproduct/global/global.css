@@ -1,0 +1,125 @@
+@import url(../main/main.css);
+@import url(../header/header.css);
+@import url(../footer/footer.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url(../../font/Poppins/Poppins-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "inter";
+  src: url(../../font/Inter/static/Inter-Regular.ttf) format(truetype);
+}
+@font-face {
+  font-family: "mont";
+  src: url(../../font/Montserrat/static/Montserrat-Regular.ttf) format(truetype);
+}
+.form-btn, .statistic-btn, .main1-btn, .container .header-btn-blue, .container .header-btn-white, .container .nav-btn2, .container .nav-btn1 {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container {
+  padding-left: 145px;
+  padding-right: 145px;
+  background-color: #1F2E35;
+}
+.container .nav-btn1 {
+  padding: 9px 24px;
+  font-size: 16px;
+  font-family: "poppins";
+  line-height: 24px;
+  background-color: transparent;
+  border: 1px solid #BCD0E5;
+  color: #fff;
+  font-weight: 600;
+}
+.container .nav-btn2 {
+  padding: 9px 24px;
+  font-size: 16px;
+  font-family: "poppins";
+  line-height: 24px;
+  background-color: #02897A;
+  border: 1px solid #02897A;
+  color: #fff;
+  font-weight: 600;
+}
+.container .header-btn-white {
+  padding: 11px 18px;
+  font-size: 18px;
+  font-family: "mont";
+  line-height: 22px;
+  background-color: #02897A;
+  border: 1px solid #02897A;
+  color: #fff;
+  font-weight: 600;
+}
+.container .header-btn-blue {
+  padding: 11px 18px;
+  font-size: 18px;
+  font-family: "mont";
+  line-height: 22px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #02897A;
+  font-weight: 600;
+}
+
+.main1-btn {
+  padding: 11px 18px;
+  font-size: 18px;
+  font-family: "mont";
+  line-height: 22px;
+  background-color: #02897A;
+  border: 1px solid #02897A;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.statistic-btn {
+  padding: 10px 34px;
+  font-size: 20px;
+  font-family: "mont";
+  line-height: 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #22343D;
+  font-weight: 600;
+}
+
+.form-btn {
+  padding: 8px 15px;
+  font-size: 16px;
+  font-family: "mont";
+  line-height: 24px;
+  background-color: #02897A;
+  border: 1px solid #02897A;
+  color: #fff;
+  font-weight: 700;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}/*# sourceMappingURL=global.css.map */

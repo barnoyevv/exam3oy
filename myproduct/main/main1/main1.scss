@@ -1,0 +1,109 @@
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main1{
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	background-color: #22343D;
+	.main1-header{
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		h3{
+			@include text(24px, "poppins", 36px);
+			font-weight: 600;
+			color: #fff;
+			text-align: center;
+		}
+		.main1-header-desc{
+			max-width: 810px;
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			h2{
+				@include text(34px, "poppins", 51px);
+				font-weight: 700;
+				color: #fff;
+				text-align: center;
+			}
+			p{
+				@include text(18px, "poppins", 27px);
+				font-weight: 400;
+				color: #fff;
+				text-align: center;
+			}
+		}
+	}
+}
+.main1-box{
+	width: 100%;
+	padding: 150px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	h2{
+		@include text(34px, "poppins",51px);
+		color: #fff;
+	}
+	.main1-box-item{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 60px;
+		.main1-box-items{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 32px;
+				.main1-box-item1{
+					max-width: 533px;
+					display: flex;
+					flex-direction: column;
+					gap: 16px;
+					p{
+						@include text(16px,"poppins",28px);
+						font-weight: 400;
+						color: #fff;
+					}
+					.main1-item-header{
+						display: flex;
+						align-items: center;
+						gap: 14px;
+					}
+					img{
+						width: 50px;
+						height: 50px;
+					}
+					h3{
+						@include text(24px,"poppins",36px);
+						font-weight: 600;
+						color: #fff;
+					}
+				}
+			}
+		}
+}
+@media (max-width: 600px) {
+	.main1-box-item{
+		.amico{
+			width: 300px;
+		}
+	}
+}
+@media (max-width: 300px) {
+	.main1-box-item{
+		.amico{
+			width: 200px;
+		}
+	}
+}

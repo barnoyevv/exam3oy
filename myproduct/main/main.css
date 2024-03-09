@@ -1,0 +1,128 @@
+@import url(./main1/main1.css);
+.main2 {
+  width: 100%;
+  padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.main2 .main2-header {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main2 .main2-header h2 {
+  font-size: 34px;
+  font-family: "poppins";
+  line-height: 51px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.main2 .main2-header P {
+  font-size: 18px;
+  font-family: "poppins";
+  line-height: 27px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.main2-box {
+  max-width: 920px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main2-box .line {
+  border: 1px solid #474747;
+}
+.main2-box .main2-box-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.main2-box .main2-box-item p {
+  font-size: 16px;
+  font-family: "poppins";
+  line-height: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.main2-box .main2-box-item .main2-box-desc {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.main2-box .main2-box-item .main2-box-desc span {
+  font-size: 18px;
+  color: #02897A;
+  cursor: pointer;
+}
+.main2-box .main2-box-item .main2-box-desc h3 {
+  font-size: 18px;
+  font-family: "poppins";
+  line-height: 27px;
+  color: #fff;
+  font-weight: 500;
+}
+.main2-box .main2-box-item .main2-box-desc h4 {
+  font-size: 18px;
+  font-family: "poppins";
+  line-height: 27px;
+  color: #22343D;
+  font-weight: 500;
+}
+
+.main2-statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main2-statistic .main2-statistic-item {
+  max-width: 970px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 30px;
+  background-color: #02897A;
+  border-radius: 30px;
+}
+.main2-statistic .main2-statistic-item img {
+  max-width: 300px;
+}
+.main2-statistic .main2-statistic-item .main2-statistic-desc {
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.main2-statistic .main2-statistic-item .main2-statistic-desc h2 {
+  font-size: 32px;
+  font-family: "poppins";
+  line-height: 48px;
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 1130px) {
+  .main2-statistic-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main2-statistic-desc h2 {
+    text-align: center;
+  }
+  .main2-statistic .main2-statistic-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}/*# sourceMappingURL=main.css.map */

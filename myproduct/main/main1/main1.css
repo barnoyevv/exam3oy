@@ -1,0 +1,114 @@
+.main1 {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background-color: #22343D;
+}
+.main1 .main1-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main1 .main1-header h3 {
+  font-size: 24px;
+  font-family: "poppins";
+  line-height: 36px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.main1 .main1-header .main1-header-desc {
+  max-width: 810px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main1 .main1-header .main1-header-desc h2 {
+  font-size: 34px;
+  font-family: "poppins";
+  line-height: 51px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+.main1 .main1-header .main1-header-desc p {
+  font-size: 18px;
+  font-family: "poppins";
+  line-height: 27px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+}
+
+.main1-box {
+  width: 100%;
+  padding: 150px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.main1-box h2 {
+  font-size: 34px;
+  font-family: "poppins";
+  line-height: 51px;
+  color: #fff;
+}
+.main1-box .main1-box-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+}
+.main1-box .main1-box-item .main1-box-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.main1-box .main1-box-item .main1-box-items .main1-box-item1 {
+  max-width: 533px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main1-box .main1-box-item .main1-box-items .main1-box-item1 p {
+  font-size: 16px;
+  font-family: "poppins";
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+.main1-box .main1-box-item .main1-box-items .main1-box-item1 .main1-item-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.main1-box .main1-box-item .main1-box-items .main1-box-item1 img {
+  width: 50px;
+  height: 50px;
+}
+.main1-box .main1-box-item .main1-box-items .main1-box-item1 h3 {
+  font-size: 24px;
+  font-family: "poppins";
+  line-height: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .main1-box-item .amico {
+    width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .main1-box-item .amico {
+    width: 200px;
+  }
+}/*# sourceMappingURL=main1.css.map */

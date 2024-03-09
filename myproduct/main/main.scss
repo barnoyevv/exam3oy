@@ -1,0 +1,120 @@
+@import url(./main1/main1.css);
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.main2{
+	width: 100%;
+	padding: 150px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+	.main2-header{
+		max-width: 560px;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		h2{
+			@include text(34px,"poppins",51px);
+			color: #fff;
+			font-weight: 700;
+			text-align: center;
+		}
+		P{
+			@include text(18px,"poppins",27px);
+			color: #fff;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+}
+.main2-box{
+	max-width: 920px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	.line{
+		border: 1px solid #474747
+	}
+	.main2-box-item{
+		display: flex;
+		flex-direction: column;
+		gap: 14px;
+		p{
+			@include text(16px,"poppins", 24px);
+			color: #fff;
+			font-weight: 400;
+		}
+		.main2-box-desc{
+			display: flex;
+			align-items: center;
+			gap: 16px;
+			span{
+				font-size: 18px;
+				color: #02897A;
+				cursor: pointer;
+			}
+			h3{
+				@include text(18px,"poppins", 27px);
+				color: #fff;
+				font-weight: 500;
+			}
+			h4{
+				@include text(18px,"poppins", 27px);
+				color: #22343D;
+				font-weight: 500;
+			}
+		}
+	}
+}
+.main2-statistic{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.main2-statistic-item{
+		max-width: 970px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 70px;
+		padding: 30px;
+		background-color: #02897A;
+		border-radius: 30px;
+		img{
+			max-width: 300px;
+		}
+		.main2-statistic-desc{
+			max-width: 510px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 50px;
+			h2{
+				@include text(32px,"poppins",48px);
+				color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+}
+@media (max-width: 1130px) {
+	.main2-statistic-desc{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2{
+			text-align: center;
+		}
+	}
+	.main2-statistic{
+		.main2-statistic-item{
+			display: flex;
+			flex-wrap: wrap;
+			gap: 50px;
+		}
+	}
+}

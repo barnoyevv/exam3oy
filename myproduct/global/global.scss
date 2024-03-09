@@ -1,0 +1,120 @@
+@import url(../main/main.css);
+@import url(../header/header.css);
+@import url(../footer/footer.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+@font-face {
+	font-family: "poppins";
+	src: url(../../font/Poppins/Poppins-Regular.ttf) format(truetype);
+}
+@font-face {
+	font-family: "inter";
+	src: url(../../font/Inter/static/Inter-Regular.ttf) format(truetype);
+}
+@font-face {
+	font-family: "mont";
+	src: url(../../font/Montserrat/static/Montserrat-Regular.ttf) format(truetype);
+}
+@mixin btn-change ($padding){
+	padding: $padding;
+}
+%btn-style{
+	border-radius: 5px;
+	cursor: pointer;
+}
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+.container{
+	padding-left: 145px;
+	padding-right: 145px;
+	background-color: #1F2E35;
+	.nav-btn1{
+		@include btn-change(9px 24px);
+		@include text(16px,"poppins",24px);
+		@extend %btn-style;
+		background-color: transparent;
+		border: 1px solid #BCD0E5;
+		color: #fff;
+		font-weight: 600;
+	}
+	.nav-btn2{
+		@include btn-change(9px 24px);
+		@include text(16px,"poppins",24px);
+		@extend %btn-style;
+		background-color: #02897A;
+		border: 1px solid #02897A;
+		color: #fff;
+		font-weight: 600;
+	}
+	.header-btn-white{
+		@include btn-change(11px 18px);
+		@include text(18px,"mont",22px);
+		@extend %btn-style;
+		background-color: #02897A;
+		border: 1px solid #02897A;
+		color: #fff;
+		font-weight: 600;
+	}
+	.header-btn-blue{
+		@include btn-change(11px 18px);
+		@include text(18px,"mont",22px);
+		@extend %btn-style;
+		background-color: #fff;
+		border: 1px solid #fff;
+		color: #02897A;
+		font-weight: 600;
+	}
+}
+.main1-btn{
+	@include btn-change(11px 18px);
+	@include text(18px,"mont",22px);
+	@extend %btn-style;
+	background-color: #02897A;
+	border: 1px solid #02897A;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+.statistic-btn{
+	@include btn-change(10px 34px);
+	@include text(20px,"mont",30px);
+	@extend %btn-style;
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #22343D;
+	font-weight: 600;
+}
+.form-btn{
+	@include btn-change(8px 15px);
+	@include text(16px,"mont",24px);
+	@extend %btn-style;
+	background-color: #02897A;
+	border: 1px solid #02897A;
+	color: #fff;
+	font-weight: 700;
+}
+@media (max-width:1300px) {
+	.container{
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+}
+@media (max-width:700px) {
+	.container{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media (max-width:500px) {
+	.container{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}

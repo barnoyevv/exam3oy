@@ -1,0 +1,163 @@
+@import url(./navbar/navbar.css);
+@mixin text ($f-size,$f-family,$l-height){
+	font-size: $f-size;
+	font-family: $f-family;
+	line-height: $l-height;
+}
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	gap: 35px;
+	.pricing{
+		@include text(24px,"poppins",36px);
+		font-weight: 600;
+		color: #fff;
+	}
+	.header-desc{
+		max-width: 720px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		h1{
+			@include text(40px,"poppins",60px);
+			font-weight: 700;
+			color: #fff;
+			text-align: center
+		}
+		p{
+			@include text(16px,"poppins",24px);
+			font-weight: 500;
+			color: #fff;
+			text-align: center;
+		}
+	}
+}
+.header-items{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 100px;
+	align-items: center;
+	padding-top: 30px;
+	.header-item-white{
+		width: 350px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 35px;
+		border-radius: 10px;
+		padding: 25px;
+		background-color: #fff;
+		box-shadow: 0px 2px 8px 0px #00000040;
+		.item-header{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 10px;
+			.pricing-text{
+				display: flex;
+				gap: 8px;
+				align-items: center;
+				h2{
+					@include text(76px,"poppins",100px);
+					font-weight: 700;
+					color: #02897A;
+				}
+				h3{
+					@include text(24px,"inter",30px);
+					font-weight: 700;
+					color: #02897A;
+				}
+			}
+			h6{
+				@include text(24px,"poppins",40px);
+				font-weight: 700;
+				color: #22343D;
+			}
+		}
+	}
+}
+.header-item-blue{
+	width: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 35px;
+	border-radius: 10px;
+	padding: 25px;
+	background-color: #02897A;
+	box-shadow: 0px 2px 8px 0px #00000040;
+	.item-header{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		.pricing-text{
+			display: flex;
+			gap: 8px;
+			align-items: center;
+			h2{
+				@include text(76px,"poppins",100px);
+				font-weight: 700;
+				color: #fff;
+			}
+			h3{
+				@include text(24px,"inter",30px);
+				font-weight: 700;
+				color: #fff;
+			}
+		}
+		h6{
+			@include text(24px,"poppins",40px);
+			font-weight: 700;
+			color: #fff;
+		}
+	}
+}
+.paragraf1{
+	@include text(16px,"poppins",40px);
+	font-weight: 400;
+	color: #22343D;
+}
+.paragraf2{
+	@include text(16px,"poppins",40px);
+	font-weight: 400;
+	color: #fff;
+}
+.price{
+	@include text(16px,"poppins",19px);
+	font-weight: 400;
+	color: #AFAFAF;
+}
+.price1{
+	@include text(16px,"poppins",19px);
+	font-weight: 400;
+	color: #E0E0E0;
+}
+.texts{
+	@include text(16px,"inter",22px);
+	font-weight: 500;
+	color: #22343D;
+}
+.texts1{
+	@include text(16px,"inter",22px);
+	font-weight: 500;
+	color: #fff;
+}
+@media (max-width: 500px) {
+	.header-desc{
+		p{
+			font-size: 36px;
+			line-height: 54px;
+		}
+	}
+}

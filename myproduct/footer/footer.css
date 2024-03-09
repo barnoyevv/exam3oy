@@ -1,0 +1,92 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+footer p {
+  font-size: 16px;
+  font-family: "poppins";
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+}
+footer h2 {
+  font-size: 30px;
+  font-family: "poppins";
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+footer h3 {
+  font-size: 20px;
+  font-family: "poppins";
+  line-height: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-items {
+  max-width: 1400px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+.footer-items .footer-item1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-items .footer-item1 input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer-items .footer-item {
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-items .footer-item .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer-items .footer-item .footer-logo img {
+  width: 50px;
+  height: 50px;
+}
+.footer-items .footer-item .footer-icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-items .footer-item .footer-icon span {
+  font-size: 40px;
+  color: #EDFFFC;
+}
+
+@media (max-width: 540px) {
+  footer p {
+    text-align: center;
+  }
+  footer .footer-items {
+    display: flex;
+    gap: 50px;
+  }
+  footer .footer-items .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=footer.css.map */
